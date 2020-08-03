@@ -1,0 +1,399 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=10"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Unregistered">
+<meta name="generator" content="Mappetizer for ArcGIS 14.0.3 by uismedia (http://www.uismedia.de)">
+<meta name="date" content="03/08/2020 06:32:05">
+<meta name="description" content="This is a Web Mapping solution created with Mappetizer for ArcGIS. ">
+<meta name="keywords" content="Mappetizer, uismedia, SVG, ArcGIS">
+<title>DU BIO DANS LA MENOUA</title>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/themes/flat/flat.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojox/layout/resources/FloatingPane.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojox/layout/resources/ResizeHandle.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojox/image/resources/Lightbox.css">
+<script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js" type="text/javascript" data-dojo-config="locale:'en', parseOnLoad: true"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel = "stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="embfiles/style.css">
+<script type="text/javascript">
+var GB_ROOT_DIR = "greybox/";
+</script>
+<link href="greybox/gb_styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="greybox/AJS.js"></script>
+<script type="text/javascript" src="greybox/AJS_fx.js"></script>
+<script type="text/javascript" src="greybox/gb_scripts.js"></script>
+<script src="embfiles/syslib.js" type="text/javascript"></script>
+<script src="embfiles/tools.js" type="text/javascript"></script>
+<script src="embfiles/table.js" type="text/javascript"></script>
+<script src="embfiles/variables.js" type="text/javascript" charset="UTF-8"></script>
+<script src="embfiles/selrecords.js" type="text/javascript"></script>
+<script src="embfiles/identify.js" type="text/javascript"></script>
+<script src="embfiles/query.js" type="text/javascript"></script>
+<script type="text/javascript"></script>
+
+</head>
+<body id="MVhtmlBody" class="flat" style="margin:0px;visibility:visible">
+<div id="MVpreloader">
+<section class="preloader">
+<p class="preloaderIn" style="font-size:1.5em;">DU BIO DANS LA MENOUA</p>
+<i class="preloaderIn fa fa-circle-notch fa-spin fa-4x fa-fw"></i>
+</section>
+</div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th0Store" data-dojo-props="url:'./embfiles/th0_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th1Store" data-dojo-props="url:'./embfiles/th1_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th2Store" data-dojo-props="url:'./embfiles/th2_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th3Store" data-dojo-props="url:'./embfiles/th3_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th4Store" data-dojo-props="url:'./embfiles/th4_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th5Store" data-dojo-props="url:'./embfiles/th5_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th6Store" data-dojo-props="url:'./embfiles/th6_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th7Store" data-dojo-props="url:'./embfiles/th7_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th8Store" data-dojo-props="url:'./embfiles/th8_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th9Store" data-dojo-props="url:'./embfiles/th9_json.js'"></div>
+<div data-dojo-type="dojo.data.ItemFileReadStore" Data-dojo-id="th10Store" data-dojo-props="url:'./embfiles/th10_json.js'"></div>
+
+<!-- Design -->
+<div id="MVborderContainer" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'headline', gutters:false">
+<div id="MVtitle" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'">
+<h1>DU BIO DANS LA MENOUA</h1>
+</div>
+<div id="MVtabContainer" data-dojo-type="dijit/layout/TabContainer"  data-dojo-props="region:'left', tabStrip: false, persist:false, useMenu: false, splitter:true" >
+<div id="MVlegendContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Map Content'"></div>
+<div id="MVidentifyContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Details'">
+<div id="MVidentifyClose"><button data-dojo-type="dijit/form/Button" type="button" data-dojo-props="iconClass:'fa fa-times MVfa-but', showLabel:false, onClick:function() { mv_deleteTPs(mv_Map.Identifys); }">Remove from list</button></div>
+<div id="MVidentifyHint">Click on the map to get information about the features.</div>
+<div id="MVidentifyList"></div>
+</div>
+<div id="MVtoolsContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Tools'">
+<div id="MVzoomObjects" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'Object selection',open:false">
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th0Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th0',true,true,false,true); }"></select>
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th1Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th1',true,true,false,true); }"></select>
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th2Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th2',true,true,false,true); }"></select>
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th3Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th3',true,true,false,true); }"></select>
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th4Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th4',true,true,false,true); }"></select>
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th5Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th5',true,true,false,true); }"></select>
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th6Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th6',true,true,false,true); }"></select>
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th7Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th7',true,true,false,true); }"></select>
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th8Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th8',true,true,false,true); }"></select>
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th9Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th9',true,true,false,true); }"></select>
+<select class="MVselect" style="width:100%;margin-bottom:5px;" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th10Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th10',true,true,false,true); }"></select>
+</div>
+</div>
+<div id="MVqueryContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Queries'"></div>
+<div id="MVinfoContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Info'" href="embfiles/info.html"></div>
+<div id="MVhelpContainer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="iconClass:'fa fa-question fa-lg', tooltip:'Help'" href="embfiles/help.html"></div>
+</div>
+<div id="MVmainSite" data-dojo-type="dijit/layout/LayoutContainer"  data-dojo-props="region:'center', design:'headline'">
+<div id="MVtoolbar" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'">
+<div class="MVtbButton" data-dojo-type="dijit/form/ToggleButton" id="MVtoolbar.zoomin" data-dojo-props="iconClass:'fa fa-plus fa-lg', showLabel:false">Zoom In</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/ToggleButton" id="MVtoolbar.zoomout" data-dojo-props="iconClass:'fa fa-minus fa-lg', showLabel:false">Zoom Out</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.fullextent" data-dojo-props="iconClass:'fa fa-globe fa-lg', showLabel:false">Back to original view</div>
+<div id="MVtbSmallScreen">
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.legend" data-dojo-props="iconClass:'fa fa-list fa-lg', showLabel:false">Map Content</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.query" data-dojo-props="iconClass:'fa fa-search fa-lg', showLabel:false">Queries</div>
+<div class="MVtbButton" data-dojo-type="dijit/form/DropDownButton"  id="MVtoolbar.help_info" data-dojo-props="iconClass:'fa fa-question fa-lg', showLabel:false">
+<label for="MVtoolbar.help_info">Help</label>
+<div data-dojo-type="dijit/DropDownMenu">
+<div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'fa-fw fa fa-question fa-lg', onClick:function(){ mv_showHelp(this); }">Help</div>
+<div data-dojo-type="dijit/MenuItem" data-dojo-props="iconClass:'fa-fw fa fa-info fa-lg', onClick:function(){ mv_showInfo(this); }">Info</div>
+</div>
+</div>
+<span class="MVtoolbarSeparator"></span>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th0Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th0',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th1Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th1',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th2Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th2',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th3Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th3',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th4Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th4',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th5Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th5',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th6Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th6',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th7Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th7',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th8Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th8',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th9Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th9',true,true,false,true); }"></select>
+<select class="MVselect MVselToolbar" data-dojo-type="dijit/form/FilteringSelect" data-dojo-props="required:false, value:'', placeHolder:'FID', searchAttr: 'name', store: th10Store, onBlur:function() {this.reset();}, onChange:function() { mv_zoomObjectDojo(this.item,'f0','th10',true,true,false,true); }"></select>
+</div>
+<div class="MVtbButton" style="position:absolute;right:25px;top:0px" data-dojo-type="dijit/form/DropDownButton" id="MVtoolbar.share" data-dojo-props="iconClass:'fa fa-share-alt fa-lg', showLabel:false">
+<label for="MVtoolbar.share">Share map</label>
+<div data-dojo-type="dijit/layout/ContentPane" style="border:2px solid darkgrey">
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fas fa-envelope fa-lg', onClick:function(){ mv_share('email'); }" ></div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fab fa-facebook-square fa-lg', onClick:function(){ mv_share('facebook'); }"></div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fab fa-twitter fa-lg', onClick:function(){ mv_share('twitter'); }"></div>
+</div>
+</div>
+<!--[IF !IE]> -->
+<div style="position:absolute;right:0px;top:0px" class="MVtbButton" data-dojo-type="dijit/form/Button" id="MVtoolbar.fullscreen" data-dojo-props="iconClass:'fa fa-arrows-alt fa-lg', showLabel:false">Fullscreen mode.</div>
+<!-- <![ENDIF]-->
+</div>
+<div id="MVmap" class="MVmap" data-dojo-type="dijit/layout/ContentPane"  data-dojo-props="region:'center'">
+<div id="MVoverviewFrame" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'Overview',open:true">
+  <div id="MVoverview"></div>
+</div>
+<div id="MVtbSmartphone">
+<div class="MVtbButtonMob" data-dojo-type="dijit/form/Button" id="MVtbSmartphone.zoomin" data-dojo-props="iconClass:'fa fa-plus MVfa-but', showLabel:false, onClick:function() { mv_zoomInButton(); }">Zoom In</div>
+<div class="MVtbButtonMob" data-dojo-type="dijit/form/Button" id="MVtbSmartphone.zoomout" data-dojo-props="iconClass:'fa fa-minus MVfa-but', showLabel:false, onClick:function() { mv_zoomOutButton(); }">Zoom Out</div>
+<div class="MVtbButtonMob" data-dojo-type="dijit/form/Button" id="MVtbSmartphone.fullextent" data-dojo-props="iconClass:'fa fa-globe MVfa-but', showLabel:false, onClick:function() { mv_fullExtent(); }">Back to original view</div>
+<div class="MVtbButtonMob" data-dojo-type="dijit/form/DropDownButton" id="MVtbSmartphone.share" data-dojo-props="iconClass:'fa fa-share-alt MVfa-but', showLabel:false">
+<label for="MVtbSmartphone.share">Share map</label>
+<div data-dojo-type="dijit/layout/ContentPane" style="border:2px solid darkgrey">
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fas fa-envelope MVfa-but', onClick:function(){ mv_share('email'); }" ></div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fab fa-facebook-square MVfa-but', onClick:function(){ mv_share('facebook'); }"></div>
+<div class="MVtbButton" data-dojo-type="dijit/form/Button" data-dojo-props="iconClass:'fab fa-twitter MVfa-but', onClick:function(){ mv_share('twitter'); }"></div>
+</div>
+</div>
+<div class="MVtbButtonMob" data-dojo-type="dijit/form/ToggleButton" id="MVtbSmartphone.overview" data-dojo-props="iconClass:'fa fa-picture-o MVfa-but', showLabel:false, onClick:function() { mv_showOverview(this,'#F7C3D6'); }">Overview</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Content -->
+<div id="MVidentifyFPContainer"></div>
+<div id="MVlegendFPContainer"></div>
+<div id="MVlegendContentContainer" style="display:none">
+<div id="MVlegendContent">
+<div id="MVth0Legend" class="MVlegC">
+<div id="th0Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th0Panel" type="checkbox"  checked name="tabs">
+<label for="th0Panel">POINT_DE_VENTE</label>
+<div class="MVLegPanel-content">
+<div id="th0Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th0');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+<div id="MVth1Legend" class="MVlegC">
+<div id="th1Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th1Panel" type="checkbox"  checked name="tabs">
+<label for="th1Panel">porcin</label>
+<div class="MVLegPanel-content">
+<div id="th1Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th1');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+<div id="MVth2Legend" class="MVlegC">
+<div id="th2Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th2Panel" type="checkbox"  checked name="tabs">
+<label for="th2Panel">Parcelle legumes</label>
+<div class="MVLegPanel-content">
+<div id="th2Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th2');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+<div id="MVth3Legend" class="MVlegC">
+<div id="th3Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th3Panel" type="checkbox"  checked name="tabs">
+<label for="th3Panel">helicoculture_vrai</label>
+<div class="MVLegPanel-content">
+<div id="th3Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th3');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+<div id="MVth4Legend" class="MVlegC">
+<div id="th4Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th4Panel" type="checkbox"  checked name="tabs">
+<label for="th4Panel">Parcelle cereales</label>
+<div class="MVLegPanel-content">
+<div id="th4Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th4');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+<div id="MVth5Legend" class="MVlegC">
+<div id="th5Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th5Panel" type="checkbox"  checked name="tabs">
+<label for="th5Panel">bovin</label>
+<div class="MVLegPanel-content">
+<div id="th5Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th5');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+<div id="MVth6Legend" class="MVlegC">
+<div id="th6Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th6Panel" type="checkbox"  checked name="tabs">
+<label for="th6Panel">volaille</label>
+<div class="MVLegPanel-content">
+<div id="th6Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th6');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+<div id="MVth7Legend" class="MVlegC">
+<div id="th7Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th7Panel" type="checkbox"  checked name="tabs">
+<label for="th7Panel">Parcelle tubercules</label>
+<div class="MVLegPanel-content">
+<div id="th7Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th7');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+<div id="MVth8Legend" class="MVlegC">
+<div id="th8Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th8Panel" type="checkbox"  checked name="tabs">
+<label for="th8Panel">route principale</label>
+<div class="MVLegPanel-content">
+<div id="th8Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th8');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+<div id="MVth9Legend" class="MVlegC">
+<div id="th9Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th9Panel" type="checkbox"  checked name="tabs">
+<label for="th9Panel">routes secondaire</label>
+<div class="MVLegPanel-content">
+<div id="th9Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th9');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+<div id="MVth10Legend" class="MVlegC">
+<div id="th10Check" class="MVcheckBut" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="checked:true, onClick:function(){ mv_changeLayerVis(this); },iconClass:'far fa-eye fa-lg',showLabel:false"></div>
+<div class="MVLegPanel">
+<input id="th10Panel" type="checkbox"  checked name="tabs">
+<label for="th10Panel">MENOUA</label>
+<div class="MVLegPanel-content">
+<div id="th10Legend" >
+</div>
+</div>
+</div>
+<div class="MVdivBut">
+<button class="MVlegendButton" type="button"onClick="mv_showTable('th10');"><span class="faMV"><i class="fa fa-th"></i></span></button>
+
+</div>
+</div>
+</div>
+</div>
+<div id="MVqueryFPContainer"></div>
+<div id="MVqueryContentContainer" style="display:none">
+<div id="MVqueryContent">
+<form name="MVqueryLayer" style="margin-top:10px;margin-right:3px;">
+<select data-dojo-type="dijit/form/Select" class="MVselect MVselLabel" style="width:100%;" data-dojo-props="name:'MVlistQueryLayer', onChange:function(){ mv_Query.layerSelect(this.value);}">
+<option disabled="disabled" value="" selected>Layer...</option>
+<option value="th0">POINT_DE_VENTE</option>
+<option value="th1">porcin</option>
+<option value="th2">Parcelle legumes</option>
+<option value="th3">helicoculture_vrai</option>
+<option value="th4">Parcelle cereales</option>
+<option value="th5">bovin</option>
+<option value="th6">volaille</option>
+<option value="th7">Parcelle tubercules</option>
+<option value="th8">route principale</option>
+<option value="th9">routes secondaire</option>
+<option value="th10">MENOUA</option>
+</select>
+</form>
+<form name="MVquery" onsubmit="return mv_Query.doQuery(false);">
+<table class="query" style="width:100%">
+<tr class="query">
+<td class="query" style="width:33.33%">Fields</td>
+<td class="query" style="width:135px">Operators</td>
+<td class="query" style="width:*">Values</td>
+</tr>
+<tr class="query">
+<td class="query">
+<div id="MVqueryFields"></div>
+</td>
+<td class="query">
+<nobr>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' = '); }">=</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' <> '); }">&lt;&gt;</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' like '); }">like</button></span>
+</nobr><br>
+<nobr>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' > '); }">&gt;</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' >= '); }">&gt;=</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' and '); }">and</button></span>
+</nobr><br>
+<nobr>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' < '); }">&lt;</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' <= '); }">&lt;=</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' or '); }">or</button></span>
+</nobr><br>
+<nobr>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' ( '); }">(</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' ) '); }">)</button></span>
+<span class="query0"><button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.sqlOperator(' % '); }">%</button></span>
+</nobr>
+</td>
+<td class="query">
+<div id="MVqueryValues"></div>
+</td>
+</tr>
+<tr class="query">
+<td colspan="3" class="query" style="vertical-align:bottom">&nbsp;<br />
+
+Query expression&nbsp;&nbsp;<a href="javascript:mv_Query.help();"><i class="fa fa-question MVfa-but"></i></a></td>
+</tr>
+<tr class="query">
+<td colspan="3" class="query">
+<input class="MVqInput" data-dojo-type="dijit/form/TextBox" data-dojo-props="name:'TextEingabe', onChange:function(){ mv_Query.test(); }, onClick:function(){ mv_Query.writeStatus(); }">
+<input type="hidden" name="SQLEingabe" value=""><br />&nbsp;<br />
+<nobr>
+<button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.doQuery(true); }">Select and Zoom</button>
+<button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.doQuery(false); }" >Select</button>
+<button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ mv_Query.clear(); }" >Clear</button>
+</nobr>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>
